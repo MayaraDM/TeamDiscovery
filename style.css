@@ -3,3 +3,23 @@
     margin: 0;
     border: 1px solid;
 }
+body {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* Header */
+.header-container {
+    display: flex;
+    justify-content: space-around;
+}
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
