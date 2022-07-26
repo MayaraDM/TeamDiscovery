@@ -60,12 +60,34 @@ nav li:hover{
     transition-duration: 0.2s; 
 }
 
+.general-container {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px;
+}
+
+main {
+    width: 80%;
+
+}
+
+aside {
+    width: 20%;
+}
+
+.article-card {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px 0px;
+    margin-top: 10px;
+}
 footer {
     background-color: #064273;
     color:white; 
+    padding: 10px;
 }
 .socialmedia-icons {
-    width: 25px;
+    width: 15px;
     padding: 2px;
     background-color: white;
     border-radius: 5px;
