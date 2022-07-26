@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="">
-    <title>Team Discovery</title>
+    <title>Discovery</title>
 </head>
 
 <body>
@@ -51,11 +51,16 @@
             </div>
             <div class="quiz-form"> <!-- TALVEZ SEJA INTERESSANTE QUE ESSA PARTE ESTEJA OCULTA ATÉ QUE O USUÁRIO CLIQUE-->
                 <form>
+                    <!--Perguntas pessoais-->
+                    <label>Qual a sua escola?</label>
+                    <select>
+                        <option value="A">Escola A</option>
+                        <option value="B">Escola B</option>
+                        <option value="C">Escola C</option>
+                    </select>
                     <label for="age">Idade: </label>
                     <input type="number" min="10" max="30" id="age">
                     <label for="gender">Você se identifica com qual gênero? </label>
-                    <!-- <input type="radio" name="option" value="Feminino" id="op1">
-                    <label for="op1">Feminino</label> -->
                     <select name="gender" id="gender">
                         <option value="feminino">Feminino</option>
                         <option value="masculino">Masculino</option>
@@ -83,22 +88,50 @@
                         <option value="publica">Escola pública</option>
                         <option value="particular-bolsa">Escola particular com bolsa</option>
                         <option value="particular">Escola particular sem bolsa</option>
-                    </select>
+                    </select><br>
+                    <!--Perguntas sobre bullying-->
+                    <p>Sobre sua experiência com situações de bullying na sua escola:</p>
+                    <input type="radio" name="bullying" value="presenciei" id="seen">
+                    <label for="seen">Já presenciei bullying</label>
+                    <input type="radio" name="bullying" value="sofri" id="bullied">
+                    <label for="seen">Já sofri bullying</label>
+                    <input type="radio" name="bullying" value="pratiquei" id="bullies">
+                    <label for="seen">Já pratiquei bullying</label>
+                    <p>Qual a frequência que essas situações ocorrem(ocorreram)?</p>
+
+                    <p>Que tipo de bullying você presenciou / sofreu / praticou na escola? (múltipla escolha)</p>
+
+                    <p>Assinale com que frequência as situações abaixo ocorreram com você na escola:</p>
+
+                    <p>Onde essas situações ocorriam quando você:</p>
+
+                    <button type="submit">Enviar</button>
                 </form>
             </div>
         </section>
 
         <section class="support">
             <div>
-                <h2> PRECISANDO DE AJUDA? <a href="#"> CLIQUE AQUI </a>.</h2>
+                <h2> PRECISANDO DE AJUDA? <a href="#"> CLIQUE AQUI </a></h2>
                 <h3> Você será direcionado diretamente ao whatsapp da nossa equipe de apoio</h3>
                 <form>
+                    <label>Qual a sua escola?</label>
+                    <select>
+                        <option value="A">Escola A</option>
+                        <option value="B">Escola B</option>
+                        <option value="C">Escola C</option>
+                    </select>
                     <label>Você é o observador ou a vítima? </label>
-                    <input>
+                    <select>
+                        <option value="observador">Observador</option>
+                        <option value="vitima">Vítima</option>
+                    </select>
                     <label for="name">Nome: </label>
                     <input type="text" id="name" placeholder="João">
                     <label for="lastname">Sobrenome: </label>
                     <input type="text" id="lastname" placeholder="Silva">
+                    <label>Faça um pequeno relato do ocorrido:</label>
+                    <textarea name="case-description" id="case-description" rows="5"></textarea>
                 </form>
             </div>
         </section>
