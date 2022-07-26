@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="">
-    <title>TeamDiscovery</title>
+    <title>Team Discovery</title>
 </head>
+
 <body>
     <header>
         <div class="header-container">
@@ -15,7 +17,8 @@
                 <img src="./images/logo-provisorio.jpg" alt="Img Logo">
             </figure>
             <h1>Nome Produto</h1>          
-        </div> 
+        </div>
+
         <nav>
             <ul>
                 <!-- <li><a>Início</a></li> -->
@@ -23,17 +26,19 @@
                 <li><a href="#">Questionário</a></li>
                 <li><a href="#">Precisa de ajuda?</a></li>
                 <li><a href="./saiba-mais.html">Saiba mais</a></li>
-                <!-- <li><a>Equipe</a></li> -->
             </ul>
         </nav>
     </header>
+
     <main class="container-inicial" >
         <section class="presentation">
             <h2> O enfrentamento ao <a href="#">bullying</a> é um compromisso da Escola do Saber. Por isso que, desde 2021, ampliamos nossos canais de comunicação. Atualmente, ofertamos aos alunos 2 ferramentas de combate ao bullying: o questionário de avaliação do ambiente escolar e o chat anônimo.</h2>
             <h1> *NOME DO SITE*</h1>
             <h2> Para identificação do bullying escolar e suporte inicial a quem se encontre nesta situação. </h2>
             <h3>Juntos podemos construir um futuro mais igualitário, sem preconceitos, com respeito às diversidades. Vamos juntos nessa?!</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_qSwCuQnjqo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>  
+
         <section class="quiz">
             <div>
             <div class="quiz-presentation">
@@ -46,17 +51,55 @@
             </div>
             <div class="quiz-form"> <!-- TALVEZ SEJA INTERESSANTE QUE ESSA PARTE ESTEJA OCULTA ATÉ QUE O USUÁRIO CLIQUE-->
                 <form>
-                    <label>Nome (Opcional): </label>
-                    <input placeholder="João">
-                    <label>Sobrenome (Opcional): </label>
-
+                    <label for="age">Idade: </label>
+                    <input type="number" min="10" max="30" id="age">
+                    <label for="gender">Você se identifica com qual gênero? </label>
+                    <!-- <input type="radio" name="option" value="Feminino" id="op1">
+                    <label for="op1">Feminino</label> -->
+                    <select name="gender" id="gender">
+                        <option value="feminino">Feminino</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                    <label>Outro: Qual? </label>
+                    <input>
+                    <label for="ethnicity">Voce se identifica com qual cor ou raça/etnia? </label>
+                    <select name="ethnicity" id="ethnicity">
+                        <option value="amarela">Amarela</option>
+                        <option value="branca">Branca</option>
+                        <option value="indigena">Indígena</option>
+                        <option value="parda">Parda</option>
+                        <option value="preta">Preta</option>
+                    </select>
+                    <label>Você está a quantos anos estudando nesta escola?</label>
+                    <select>
+                        <option value="1">1 ano</option>
+                        <option value="2">2 anos</option>
+                        <option value="3">3 anos</option>
+                        <option value=">4">4 anos ou mais</option>
+                    </select>
+                    <label>Você estudou até então predominantemente em:</label>
+                    <select>
+                        <option value="publica">Escola pública</option>
+                        <option value="particular-bolsa">Escola particular com bolsa</option>
+                        <option value="particular">Escola particular sem bolsa</option>
+                    </select>
                 </form>
             </div>
         </section>
+
         <section class="support">
             <div>
                 <h2> PRECISANDO DE AJUDA? <a href="#"> CLIQUE AQUI </a>.</h2>
                 <h3> Você será direcionado diretamente ao whatsapp da nossa equipe de apoio</h3>
+                <form>
+                    <label>Você é o observador ou a vítima? </label>
+                    <input>
+                    <label for="name">Nome: </label>
+                    <input type="text" id="name" placeholder="João">
+                    <label for="lastname">Sobrenome: </label>
+                    <input type="text" id="lastname" placeholder="Silva">
+                </form>
             </div>
         </section>
         <section class="support">
@@ -66,12 +109,13 @@
             </div>
         </section>
     </main>
+
     <aside class="articles_sidebar">
         <h3> Últimas Notícias</h3>
         <ul class="articles_list">
             <li class="articles_item">
                 <a href="#">
-                <a href="https://brasilescola.uol.com.br/sociologia/bullying.htm">
+                <a href="https://brasilescola.uol.com.br/sociologia/bullying.htm" target="_blank">
                     <picture class="articles_picture">
                         <img src="./images/img-1.webp" alt="Adolescente sentado no chão (com a cabeça baixa) e três adolescentes em pé apontando o dedo para ele">
                     </picture>
@@ -81,7 +125,7 @@
                 </a>
             </li>
             <li class="articles_item">
-                <a href="https://maestrovirtuale.com/os-8-tipos-de-bullying-escolar-e-suas-caracteristicas/">
+                <a href="https://maestrovirtuale.com/os-8-tipos-de-bullying-escolar-e-suas-caracteristicas/" target="_blank">
                     <picture class="articles_picture">
                         <img src="./images/img-2.png" alt="Estudante com os braços cruzados, segurando um material escolar, e cinco adolescentes atrás apontando o dedo para ela.">
                     </picture>
@@ -91,7 +135,7 @@
                 </a>
             </li>
             <li class="articles_item">
-                <a href="https://wakke.co/prevenir-o-bullying-na-escola/">
+                <a href="https://wakke.co/prevenir-o-bullying-na-escola/" target="_blank">
                     <picture class="articles_picture">
                         <img src="#" alt="#">
                         <img src="./images/img-3.png" alt="Desenho de uma pessoa sentada, com a mão no rosto e dedos apontados para ela.">
@@ -104,7 +148,7 @@
             </li>
             <li class="articles_item">
                 <a href="#">
-                <a href="https://blog.elevaplataforma.com.br/bullying-na-escola/">
+                <a href="https://blog.elevaplataforma.com.br/bullying-na-escola/" target="_blank">
                     <picture class="articles_picture">
                         <img src="#" alt="#">
                         <img src="./images/img-4.jpg" alt="Criança triste, olhando para baixo, com os braços cruzados e duas crianças atrás apontando o dedo para ela.">
@@ -117,7 +161,7 @@
             </li>
             <li class="articles_item">
                 <a href="#">
-                <a href="https://minhasatividades.com/10-atividades-sobre-bullying/">
+                <a href="https://minhasatividades.com/10-atividades-sobre-bullying/" target="_blank">
                     <picture class="articles_picture">
                         <img src="#" alt="#">
                         <img src="./images/img-5.png" alt="Imagem com o texto 10 atividades sobre bullying">
@@ -138,27 +182,27 @@
             <ul class="team">
                 <li>
                     Felipe Brackmann Di Napoli
-                    <a href=""><img class="socialmedia-icons" src="./images/icons/github-icon.png"></a>
-                    <a href=""><img class="socialmedia-icons" src="./images/icons/linkedin-icon2.png"></a>
+                    <a href="" target="_blank"><img class="socialmedia-icons" src="./images/icons/github-icon.png"></a>
+                    <a href="" target="_blank"><img class="socialmedia-icons" src="./images/icons/linkedin-icon2.png"></a>
                 </li>
                 <li>
                     Marcia Borges Henrique
-                    <a href=""><img class="socialmedia-icons" src="./images/icons/github-icon.png"></a>
-                    <a href=""><img class="socialmedia-icons" src="./images/icons/linkedin-icon2.png"></a>
+                    <a href="" target="_blank"><img class="socialmedia-icons" src="./images/icons/github-icon.png"></a>
+                    <a href="" target="_blank"><img class="socialmedia-icons" src="./images/icons/linkedin-icon2.png"></a>
                 <li>
                     Mayara Delagnelo Medeiros
-                    <a href=""><img class="socialmedia-icons" src="./images/icons/github-icon.png"></a>
-                    <a href=""><img class="socialmedia-icons" src="./images/icons/linkedin-icon2.png"></a>
+                    <a href="" target="_blank"><img class="socialmedia-icons" src="./images/icons/github-icon.png"></a>
+                    <a href="" target="_blank"><img class="socialmedia-icons" src="./images/icons/linkedin-icon2.png"></a>
                 </li>
                 <li>
                     Thayná Alves Coelho
-                    <a href=""><img class="socialmedia-icons" src="./images/icons/github-icon.png"></a>
-                    <a href=""><img class="socialmedia-icons" src="./images/icons/linkedin-icon2.png"></a>
+                    <a href="" target="_blank"><img class="socialmedia-icons" src="./images/icons/github-icon.png"></a>
+                    <a href="" target="_blank"><img class="socialmedia-icons" src="./images/icons/linkedin-icon2.png"></a>
                 </li>
                 <li>
                     Victor Gabriel Russo Galvão
-                    <a href=""><img class="socialmedia-icons" src="./images/icons/github-icon.png"></a>
-                    <a href=""><img class="socialmedia-icons" src="./images/icons/linkedin-icon2.png"></a>
+                    <a href="" target="_blank"><img class="socialmedia-icons" src="./images/icons/github-icon.png"></a>
+                    <a href="" target="_blank"><img class="socialmedia-icons" src="./images/icons/linkedin-icon2.png"></a>
                 </li>
             </ul>
         </div> 

@@ -60,7 +60,13 @@ nav li:hover{
     transition-duration: 0.2s; 
 }
 
+footer {
+    background-color: #064273;
+    color:white; 
+}
 .socialmedia-icons {
     width: 25px;
     padding: 2px;
+    background-color: white;
+    border-radius: 5px;
 }
