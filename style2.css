@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100;1,400&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid; */
+    
+}
+html {
+    font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #def3f6;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* Header */
+header {
+    background-color: #064273;
+    color:white;
+}
+.header-container {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    align-items: center;
+}
+
+#img-logo img {
+    overflow: hidden;
+    border-radius: 500%;
+    width: 150px
+}
+/*header .header-container {
+    align-items: center;
+} */
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+nav a {
+    color: white;
+}
+nav li{
+    padding: 10px;
+}
+nav li:hover{
+    color:#76b6c4;
+    background-color: rgba(255, 255, 255, 0.25);
+    transition: ease-in;
+    transition-duration: 0.2s; 
+}
+
+/* Principal - Main e Aside */
+
+.principal {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+}
+/*.general-container {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px;
+} */
+
+main {
+    width: 75%;
+    margin: 1rem;
+
+}
+
+aside {
+    width: 25%;
+    margin: 1rem;
+}
+
+/* Aside */
+aside h1{
+    margin-bottom: 1rem;
+    /* text-transform: uppercase; */
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.article-card {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px 0px;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.card-img {
+    width: 100%;
+}
+
+.card-img img {
+    object-fit: contain;
+}
+
+.article_title{
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #064273;
+    color:white; 
+    padding: 10px;
+}
+.socialmedia-icons {
+    width: 15px;
+    padding: 2px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* media */
