@@ -2,7 +2,7 @@
 * {
     padding: 0;
     margin: 0;
-    /*border: 1px solid;*/
+    /* border: 1px solid; */
     
 }
 html {
@@ -27,9 +27,22 @@ header {
 }
 .header-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     padding: 10px;
 }
+/*#img-logo {
+    border: 1px solid;
+    border-radius: 50px;
+} */
+#img-logo img {
+    overflow: hidden;
+    border-radius: 500%;
+    width: 150px
+}
+header .header-container {
+    align-items: center;
+}
+
 nav ul {
     display: flex;
     justify-content: space-evenly;
