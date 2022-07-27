@@ -133,6 +133,9 @@ form{
     align-items: center;
     */
 }
+input {
+    border-radius: 5px;
+}
 .perguntas-pessoais{
     padding: 30px 20px;
     line-height: 25px;
@@ -142,6 +145,7 @@ form p{
     background-color: #76b6c4;
     padding: 14px;
     font-weight: bold;
+    border-radius: 5px;
 }
 
 label{
@@ -153,9 +157,16 @@ label{
     display: flex;
     flex-direction: column;
     background-color: white;
-
 }
-
+.perguntas-bullying h3, h4 {
+    background-color: #064273;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 14px;
+    border-radius: 5px;
+    text-align: center;
+}
 button{
     padding: 10px;
     background-color: #064273;
