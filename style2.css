@@ -2,7 +2,7 @@
 * {
     padding: 0;
     margin: 0;
-   /* border: 1px solid; */
+    /* border: 1px solid; */
     
 }
 html {
@@ -117,6 +117,7 @@ aside h1{
 
 /* Footer */
 footer {
+    text-align: center;
     background-color: #064273;
     color:white; 
     padding: 10px;
@@ -128,9 +129,12 @@ footer {
     border-radius: 5px;
 }
 
-h3{
+footer h3{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
+    margin-bottom: 15px;
+    letter-spacing: 1.5px;
+
 }
 
 footer p {
@@ -139,13 +143,22 @@ footer p {
     font-size: 15px;
 }
 
-.dev1, .dev2, .dev3, .dev4, .dev5{
+.dev1, .dev2, .dev3, .dev4 {
     border-radius: 30%;
 }
 
 .dadosAutores{
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
+.dev-card{
+    text-align: center;
+}
+
+.logo-linkedin, .logo-github {
+    background-color: white;
+    border-radius: 20%;
+}
 /* media */
