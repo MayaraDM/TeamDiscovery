@@ -61,6 +61,108 @@ nav li:hover{
 
 /* Principal - Main e Aside */
 
+.presentation{
+    padding: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.presentation-container{
+    background-color: white;
+    border-bottom: white 1.5px solid;
+    color: black;
+    font-size: 1.4em;
+    text-align: center;
+    /*border: blue solid 2px;*/
+    box-shadow: gray 5px 5px 10px 0px;
+    padding: 30px;
+   
+}
+
+.presentation-container h1{
+    margin-bottom: 10px;
+    padding: 15px;
+    border: white;
+    border-bottom: red 2px solid;
+}
+
+.presentation-container h2{
+    margin: 20px;
+    font-size: 1em;
+}
+
+.presentation-container p{
+    font-size: 0.8em;
+    margin-bottom: 30px;
+}
+
+/* QUIZ */
+
+.quiz-form{
+    border-radius: 7%;
+    background-color: white;
+    margin: 30px;
+
+}
+
+.quiz-form h2{
+    text-align: center;
+    padding: 30px;
+    background-color: white;
+    color: #064273;
+    letter-spacing: 1.5px;
+}
+
+
+.text{
+    background-color:#064273;
+    padding: 10px 30px;
+    color: white;
+    text-align: center;
+}
+
+form{
+    /*padding: 40px;*/
+    word-spacing: 5px;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    /*text-align: justify;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    */
+}
+.perguntas-pessoais{
+    padding: 30px 20px;
+    line-height: 25px;
+    background-color: rgb(224, 224, 224);
+}
+form p{
+    background-color: #76b6c4;
+    padding: 14px;
+    font-weight: bold;
+}
+
+label{
+    font-weight: bold;
+    padding: 4px;
+}
+
+.perguntas-bullying{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+
+}
+
+button{
+    padding: 10px;
+    background-color: #064273;
+    border: white solid 2px;
+    font-size: 1.5em;
+    color: white;
+}
 
 
 /* Aside */
