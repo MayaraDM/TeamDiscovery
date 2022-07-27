@@ -12,32 +12,34 @@
     <header>
         <div class="header-container">
             <figure id="img-logo">
-                <img src="./images/logo-provisorio.jpg" alt="Imagem Logo">
+                <img src="./images/img-logo.png" alt="Imagem Logo">
             </figure>
-            <h1>Nome Produto</h1>          
+            <div class="header-title">
+                <h1>Nome Produto</h1> 
+            </div>     
         </div>
 
         <nav>
             <ul>
                 <!-- <li><a>Início</a></li> -->
-                <li><a href="#">Apresentação</a></li>
-                <li><a href="#">Questionário</a></li>
-                <li><a href="#">Precisa de ajuda?</a></li>
+                <li><a href="#main">Apresentação</a></li>
+                <li><a href="#quiz">Questionário</a></li>
+                <li><a href="#help">Precisa de ajuda?</a></li>
                 <li><a href="./saiba-mais.html">Saiba mais</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="principal">
-        <main class="main-container">
+        <main class="main-container" id="main">
             <h1></h1>
-            <h2> Para identificação do bullying escolar e suporte inicial a quem se encontre nesta situação. </h2>
+            <h2> Para identificação do <i>bullying</i> escolar e suporte inicial a quem se encontre nesta situação. </h2>
             <p>Juntos podemos construir um futuro mais igualitário, sem preconceitos, com respeito às diversidades. Vamos juntos nessa?!</p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/_qSwCuQnjqo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <section class="presentation">
 
             </section>
-            <section class="quiz-form">
+            <section class="quiz-form" id="quiz">
                 <h2>Questionário sobre <i>bullying</i> na escola</h2>
                 <p>A escola em que você está matriculado(a) será informada sobre a possível ocorrência do <i>bullying</i> e lhe prestará o apoio necessário. Não se preocupe, as informações fornecidas são de forma anônima e não serão usadas para identificá-lo.</p>
                 <a href="#"> <!-- "RESPONDER AGORA" OU COLOCAR UMA SETA PARA BAIXO? --> </a>
@@ -81,16 +83,16 @@
                         <option value="particular">Escola particular sem bolsa</option>
                     </select><br>
                     <!--Perguntas sobre bullying-->
-                    <p>Sobre sua experiência com situações de bullying na sua escola:</p>
+                    <p>Sobre sua experiência com situações de <i>bullying</i> na sua escola:</p>
                     <input type="radio" name="bullying" value="presenciei" id="seen">
-                    <label for="seen">Já presenciei bullying</label>
+                    <label for="seen">Já presenciei <i>bullying</i></label>
                     <input type="radio" name="bullying" value="sofri" id="bullied">
-                    <label for="seen">Já sofri bullying</label>
+                    <label for="seen">Já sofri <i>bullying</i></label>
                     <input type="radio" name="bullying" value="pratiquei" id="bullies">
-                    <label for="seen">Já pratiquei bullying</label>
+                    <label for="seen">Já pratiquei <i>bullying</i></label>
                     <p>Qual a frequência que essas situações ocorrem(ocorreram)?</p>
 
-                    <p>Que tipo de bullying você presenciou / sofreu / praticou na escola? (múltipla escolha)</p>
+                    <p>Que tipo de <i>bullying</i> você presenciou / sofreu / praticou na escola? (múltipla escolha)</p>
 
                     <p>Assinale com que frequência as situações abaixo ocorreram com você na escola:</p>
 
@@ -100,7 +102,7 @@
                 </form>
 
             </section>
-            <section class="help-form">
+            <section class="help-form" id="help">
                 <h2>Precisa de Ajuda?</h2>
                 <p>Preencha as informações abaixo, que serão enviadas a um responsável da escola.</p>
                 <form>
@@ -110,7 +112,7 @@
                         <option value="B">Escola B</option>
                         <option value="C">Escola C</option>
                     </select>
-                    <label>Você presenciou ou sofreu bullying? </label>
+                    <label>Você presenciou ou sofreu <i>bullying</i>? </label>
                     <select>
                         <option value="presenciou">Presenciei</option>
                         <option value="sofreu">Sofri</option>
@@ -121,6 +123,7 @@
                     <input type="text" id="lastname" placeholder="Silva">
                     <label>Faça um pequeno relato do ocorrido:</label>
                     <textarea name="case-description" id="case-description" rows="5"></textarea>
+                    <button type="submit">Enviar</button>
                 </form>
 
             </section>

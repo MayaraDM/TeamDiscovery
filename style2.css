@@ -2,7 +2,7 @@
 * {
     padding: 0;
     margin: 0;
-    /* border: 1px solid; */
+   /* border: 1px solid; */
     
 }
 html {
@@ -26,22 +26,24 @@ li {
 header {
     background-color: #064273;
     color:white;
+    
 }
 .header-container {
     display: flex;
     justify-content: flex-start;
-    padding: 10px;
+    padding-left: 10px;
     align-items: center;
 }
 
 #img-logo img {
     overflow: hidden;
     border-radius: 500%;
-    width: 150px
+    width: 200px
 }
-/*header .header-container {
-    align-items: center;
-} */
+.header-title {
+    margin-left: 35%;
+   
+} 
 
 nav ul {
     display: flex;
