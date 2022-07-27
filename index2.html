@@ -82,48 +82,200 @@
                         <option value="particular-bolsa">Escola particular com bolsa</option>
                         <option value="particular">Escola particular sem bolsa</option>
                     </select>
+    
                     <!--Perguntas sobre bullying-->
-                    <p>Sobre sua experiência com situações de <i>bullying</i> na sua escola:</p>
+                    <h3>Sobre sua experiência com situações de bullying na sua escola:</h3>
                     <input type="radio" name="bullying" value="presenciei" id="seen">
                     <label for="seen">Já presenciei <i>bullying</i></label>
                     <input type="radio" name="bullying" value="sofri" id="bullied">
                     <label for="seen">Já sofri <i>bullying</i></label>
                     <input type="radio" name="bullying" value="pratiquei" id="bullies">
                     <label for="seen">Já pratiquei <i>bullying</i></label>
-                    <p>Qual a frequência que essas situações ocorrem(ocorreram)?</p>
-                    <input type="radio" name="frequency" value="nunca" id="never">
-                    <label for="never">Nunca</label>
-                    <input type="radio" name="frequency" value="raramente" id="rarely">
-                    <label for="rarely">Raramente</label>
-                    <input type="radio" name="frequency" value="Às Vezes" id="occasionally">
-                    <label for="occasionally">Às Vezes</label>
-                    <input type="radio" name="frequency" value="frequentemente" id="frequently">
-                    <label for="frequently">Frequentemente</label>
-                    <input type="radio" name="frequency" value="sempre" id="always">
-                    <label for="always">Sempre</label>
-
-                    <p>Que tipo de <i>bullying</i> você presenciou / sofreu / praticou na escola? (múltipla escolha)</p>
-                    <input type="checkbox" name="type" value="verbal" id="verbal">
-                    <label for="verbal">Verbal (insultos, xingamentos, apelidos depreciativos)</label>
-                    <input type="checkbox" name="type" value="físico" id="physical">
-                    <label for="physical">Físico (ameaças, chutes, socos)</label>
-                    <input type="checkbox" name="type" value="moral" id="moral">
-                    <label for="moral">Moral (inventar rumores, mentiras, boatos)</label>
-                    <input type="checkbox" name="type" value="material" id="material">
-                    <label for="">Material (mexer com pertences, subtrair coisas)</label>
-                    <input type="checkbox" name="type" valeu="social" id="social">
-                    <label for="social">Social (isolar, excluir, ignorar)</label>
-                    <input type="checkbox" name="type" value="psicológico" id="psychological">
-                    <label for="psychological">Psicológico (chantagens, manipulação, perseguição)</label>
-                    <input type="checkbox" name="type" value="Cyberbullying" id="cyberbullying">
-                    <label for="cyberbullying">Cyberbullying (ocorrido através de meios eletrônicos)</label>
-                    <input type="checkbox" name="type" value="homofóbico/transfóbico" id="blank">
-                    <label for="blank">Homofóbico/transfóbico (bullying por questões de sexualidade)</label>
-                    
-                    <p>Assinale com que frequência as situações abaixo ocorreram com você na escola:</p>
-
-                    <p>Onde essas situações ocorriam quando você:</p>
-
+                    <h4>Qual a frequência que essas situações ocorrem?</h4>
+                    <p>Já presenciei bullying</p>
+                    <input type="radio" value="yes"><label>Sim</label>
+                    <input type="radio" value="no"><label>Não</label>
+                    <input type="radio" value="maybe"><label>Talvez / Não tenho certeza</label>
+                    <p>Já sofri bullying</p>
+                    <input type="radio" value="yes"><label>Sim</label>
+                    <input type="radio" value="no"><label>Não</label>
+                    <input type="radio" value="maybe"><label>Talvez / Não tenho certeza</label>
+                    <p>Já pratiquei bullying</p>
+                    <input type="radio" value="yes"><label>Sim</label>
+                    <input type="radio" value="no"><label>Não</label>
+                    <input type="radio" value="maybe"><label>Talvez / Não tenho certeza</label>
+    
+                    <h4>Qual a frequência que essas situações ocorrem na escola?</h4>
+                    <p>Presenciei bullying</p>
+                    <input type="radio" value="never"><label>Nunca</label>
+                    <input type="radio" value="seldom"><label>Raramente</label>
+                    <input type="radio" value="sometimes"><label>Ás vezes</label>
+                    <input type="radio" value="often"><label>Frequentemente</label>
+                    <input type="radio" value="always"><label>Sempre</label>
+                    <p>Sofri bullying</p>
+                    <input type="radio" value="never"><label>Nunca</label>
+                    <input type="radio" value="seldom"><label>Raramente</label>
+                    <input type="radio" value="sometimes"><label>Ás vezes</label>
+                    <input type="radio" value="often"><label>Frequentemente</label>
+                    <input type="radio" value="always"><label>Sempre</label>
+                    <p>Pratiquei bullying</p>
+                    <input type="radio" value="never"><label>Nunca</label>
+                    <input type="radio" value="seldom"><label>Raramente</label>
+                    <input type="radio" value="sometimes"><label>Ás vezes</label>
+                    <input type="radio" value="often"><label>Frequentemente</label>
+                    <input type="radio" value="always"><label>Sempre</label>
+    
+                    <h4>Que tipo de bullying você presenciou / sofreu / praticou na escola?</h4>
+                    <p>Verbal (insultos, xingamentos, apelidos depreciativos)</p>
+                    <input type="checkbox" value="presenciei"><label>Presenciei</label>
+                    <input type="checkbox" value="sofri"><label>Sofri</label>
+                    <input type="checkbox" value="pratiquei"><label>Pratiquei</label>
+                    <input type="checkbox" value="nda"><label>Não presenciei, não sofri, não pratiquei</label>
+                    <p>Físico (ameaças, chutes, socos)</p>
+                    <input type="checkbox" value="presenciei"><label>Presenciei</label>
+                    <input type="checkbox" value="sofri"><label>Sofri</label>
+                    <input type="checkbox" value="pratiquei"><label>Pratiquei</label>
+                    <input type="checkbox" value="nda"><label>Não presenciei, não sofri, não pratiquei</label>
+                    <p>Moral (inventar rumores, mentiras, boatos)</p>
+                    <input type="checkbox" value="presenciei"><label>Presenciei</label>
+                    <input type="checkbox" value="sofri"><label>Sofri</label>
+                    <input type="checkbox" value="pratiquei"><label>Pratiquei</label>
+                    <input type="checkbox" value="nda"><label>Não presenciei, não sofri, não pratiquei</label>
+                    <p>Material (mexer com pertences, subtrair coisas)</p>
+                    <input type="checkbox" value="presenciei"><label>Presenciei</label>
+                    <input type="checkbox" value="sofri"><label>Sofri</label>
+                    <input type="checkbox" value="pratiquei"><label>Pratiquei</label>
+                    <input type="checkbox" value="nda"><label>Não presenciei, não sofri, não pratiquei</label>
+                    <p>Social (isolar, excluir, ignorar)</p>
+                    <input type="checkbox" value="presenciei"><label>Presenciei</label>
+                    <input type="checkbox" value="sofri"><label>Sofri</label>
+                    <input type="checkbox" value="pratiquei"><label>Pratiquei</label>
+                    <input type="checkbox" value="nda"><label>Não presenciei, não sofri, não pratiquei</label>
+                    <p>Psicológico	(chantagens, manipulação, perseguição)</p>
+                    <input type="checkbox" value="presenciei"><label>Presenciei</label>
+                    <input type="checkbox" value="sofri"><label>Sofri</label>
+                    <input type="checkbox" value="pratiquei"><label>Pratiquei</label>
+                    <input type="checkbox" value="nda"><label>Não presenciei, não sofri, não pratiquei</label>
+                    <p>Cyberbullying (ocorrido através de meios eletrônicos)</p>
+                    <input type="checkbox" value="presenciei"><label>Presenciei</label>
+                    <input type="checkbox" value="sofri"><label>Sofri</label>
+                    <input type="checkbox" value="pratiquei"><label>Pratiquei</label>
+                    <input type="checkbox" value="nda"><label>Não presenciei, não sofri, não pratiquei</label>
+                    <p>Homofóbico/transfóbico (bullyingpor questões de sexualidade)</p>
+                    <input type="checkbox" value="presenciei"><label>Presenciei</label>
+                    <input type="checkbox" value="sofri"><label>Sofri</label>
+                    <input type="checkbox" value="pratiquei"><label>Pratiquei</label>
+                    <input type="checkbox" value="nda"><label>Não presenciei, não sofri, não pratiquei</label>
+    
+                    <h4>Assinale com que frequência as situações abaixo ocorreram com você na escola:</h4>
+                    <p>Eu vi alguém ser provocado, zoado, recebendo apelidos, irritado ou tendo seus pertences subtraídos por algum colega.</p>
+                    <label></label>
+                    <p>Eu vi alguém ser isolado, excluído, ignorado por algum colega.</p>
+                    <input type="radio" value="never"><label>Nunca</label>
+                    <input type="radio" value="seldom"><label>Raramente</label>
+                    <input type="radio" value="sometimes"><label>Ás vezes</label>
+                    <input type="radio" value="often"><label>Frequentemente</label>
+                    <input type="radio" value="always"><label>Sempre</label>
+                    <p>Eu vi alguém ser agredido, maltratado, ameaçado, excluído ou humilhado por algum colega.</p>
+                    <input type="radio" value="never"><label>Nunca</label>
+                    <input type="radio" value="seldom"><label>Raramente</label>
+                    <input type="radio" value="sometimes"><label>Ás vezes</label>
+                    <input type="radio" value="often"><label>Frequentemente</label>
+                    <input type="radio" value="always"><label>Sempre</label>
+                    <p>Eu fui provocado, zoado, irritado ou tive meus pertences subtraídos por algum colega.</p>
+                    <input type="radio" value="never"><label>Nunca</label>
+                    <input type="radio" value="seldom"><label>Raramente</label>
+                    <input type="radio" value="sometimes"><label>Ás vezes</label>
+                    <input type="radio" value="often"><label>Frequentemente</label>
+                    <input type="radio" value="always"><label>Sempre</label>
+                    <p>Eu fui isolado, excluído, ignorado por algum colega.</p>
+                    <input type="radio" value="never"><label>Nunca</label>
+                    <input type="radio" value="seldom"><label>Raramente</label>
+                    <input type="radio" value="sometimes"><label>Ás vezes</label>
+                    <input type="radio" value="often"><label>Frequentemente</label>
+                    <input type="radio" value="always"><label>Sempre</label>
+                    <p>Eu fui agredido, ameaçado, excluído ou humilhado por algum colega.</p>
+                    <input type="radio" value="never"><label>Nunca</label>
+                    <input type="radio" value="seldom"><label>Raramente</label>
+                    <input type="radio" value="sometimes"><label>Ás vezes</label>
+                    <input type="radio" value="often"><label>Frequentemente</label>
+                    <input type="radio" value="always"><label>Sempre</label>
+                    <p>Eu provoquei, zoei, coloquei apelidos, irritei ou subtraí pertences de algum colega.</p>
+                    <input type="radio" value="never"><label>Nunca</label>
+                    <input type="radio" value="seldom"><label>Raramente</label>
+                    <input type="radio" value="sometimes"><label>Ás vezes</label>
+                    <input type="radio" value="often"><label>Frequentemente</label>
+                    <input type="radio" value="always"><label>Sempre</label>
+                    <p>Eu isolei, excluí ou ignorei algum colega.</p>
+                    <input type="radio" value="never"><label>Nunca</label>
+                    <input type="radio" value="seldom"><label>Raramente</label>
+                    <input type="radio" value="sometimes"><label>Ás vezes</label>
+                    <input type="radio" value="often"><label>Frequentemente</label>
+                    <input type="radio" value="always"><label>Sempre</label>
+                    <p>Eu agedi, maltratei, ameacei, excluí ou humilhei algum colega.</p>
+                    <input type="radio" value="never"><label>Nunca</label>
+                    <input type="radio" value="seldom"><label>Raramente</label>
+                    <input type="radio" value="sometimes"><label>Ás vezes</label>
+                    <input type="radio" value="often"><label>Frequentemente</label>
+                    <input type="radio" value="always"><label>Sempre</label>
+    
+                    <h4>Assinale onde essas situações ocorriam quando:</h4>
+                    <p>Indo e vindo da escola</p>
+                    <input type="checkbox" value="presenciei"><label>Presenciei</label>
+                    <input type="checkbox" value="sofri"><label>Sofri</label>
+                    <input type="checkbox" value="pratiquei"><label>Pratiquei</label>
+                    <input type="checkbox" value="nda"><label>Não presenciei, não sofri, não pratiquei</label>
+                    <p>Na sala de aula</p>
+                    <input type="checkbox" value="presenciei"><label>Presenciei</label>
+                    <input type="checkbox" value="sofri"><label>Sofri</label>
+                    <input type="checkbox" value="pratiquei"><label>Pratiquei</label>
+                    <input type="checkbox" value="nda"><label>Não presenciei, não sofri, não pratiquei</label>
+                    <p>Nos corredores</p>
+                    <input type="checkbox" value="presenciei"><label>Presenciei</label>
+                    <input type="checkbox" value="sofri"><label>Sofri</label>
+                    <input type="checkbox" value="pratiquei"><label>Pratiquei</label>
+                    <input type="checkbox" value="nda"><label>Não presenciei, não sofri, não pratiquei</label>
+                    <p>Na quadra</p>
+                    <input type="checkbox" value="presenciei"><label>Presenciei</label>
+                    <input type="checkbox" value="sofri"><label>Sofri</label>
+                    <input type="checkbox" value="pratiquei"><label>Pratiquei</label>
+                    <input type="checkbox" value="nda"><label>Não presenciei, não sofri, não pratiquei</label>
+                    <p>Nos banheiros da escola</p>
+                    <input type="checkbox" value="presenciei"><label>Presenciei</label>
+                    <input type="checkbox" value="sofri"><label>Sofri</label>
+                    <input type="checkbox" value="pratiquei"><label>Pratiquei</label>
+                    <input type="checkbox" value="nda"><label>Não presenciei, não sofri, não pratiquei</label>
+                    <p>Em outro local da escola</p>
+                    <input type="checkbox" value="presenciei"><label>Presenciei</label>
+                    <input type="checkbox" value="sofri"><label>Sofri</label>
+                    <input type="checkbox" value="pratiquei"><label>Pratiquei</label>
+                    <input type="checkbox" value="nda"><label>Não presenciei, não sofri, não pratiquei</label>
+                    <p>Atrabés da internet ou celular</p>
+                    <input type="checkbox" value="presenciei"><label>Presenciei</label>
+                    <input type="checkbox" value="sofri"><label>Sofri</label>
+                    <input type="checkbox" value="pratiquei"><label>Pratiquei</label>
+                    <input type="checkbox" value="nda"><label>Não presenciei, não sofri, não pratiquei</label>
+    
+                    <h4>Assinale quando foi a última vez que o bullying ocorreu, quando você:</h4>
+                    <p>Presenciou</p>
+                    <input type="radio" value="nunca"> <label>Nunca</label>
+                    <input type="radio" value="semana"><label>Na última semana</label>
+                    <input  type="radio" value="mes"><label>Nos últimos 30 dias</label>
+                    <input type="radio" value="ano"><label>No último ano</label>
+                    <input type="radio" value=">1ano"><label>Há um ano ou mais</label>
+                    <p>Sofreu</p>
+                    <input type="radio" value="nunca"> <label>Nunca</label>
+                    <input type="radio" value="semana"><label>Na última semana</label>
+                    <input  type="radio" value="mes"><label>Nos últimos 30 dias</label>
+                    <input type="radio" value="ano"><label>No último ano</label>
+                    <input type="radio" value=">1ano"><label>Há um ano ou mais</label>
+                    <p>Praticou</p>
+                    <input type="radio" value="nunca"> <label>Nunca</label>
+                    <input type="radio" value="semana"><label>Na última semana</label>
+                    <input  type="radio" value="mes"><label>Nos últimos 30 dias</label>
+                    <input type="radio" value="ano"><label>No último ano</label>
+                    <input type="radio" value=">1ano"><label>Há um ano ou mais</label><br>
+    
                     <button type="submit">Enviar</button>
                 </form>
 
