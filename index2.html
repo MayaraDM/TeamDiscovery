@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="icon" type="image/x-icon" href="">
+    <title>Discovery</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <figure id="img-logo">
+                <img src="./images/img-logo.png" alt="Imagem Logo">
+            </figure>
+            <div class="header-title">
+                <h1>Nome Produto</h1> 
+            </div>     
+        </div>
+
+        <nav>
+            <ul>
+                <!-- <li><a>Início</a></li> -->
+                <li><a href="#main">Apresentação</a></li>
+                <li><a href="#quiz">Questionário</a></li>
+                <li><a href="#help">Precisa de ajuda?</a></li>
+                <li><a href="./saiba-mais.html">Saiba mais</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="principal">
+        <main class="main-container" id="main">
+            <section class="presentation">
+                <div class="presentation-container">
+                    <h1>STOP BULLYING</h1>
+                    <h2> Para identificação do <i>bullying</i> escolar e suporte inicial a quem se encontre nesta situação. </h2>
+                    <p>Juntos podemos construir um futuro mais igualitário, sem preconceitos, com respeito às diversidades. Vamos juntos nessa?!</p>
+                </div>
+            </section>
+            <!--<div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_qSwCuQnjqo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>-->
+            <section class="quiz-form" id="quiz">
+                <h2>QUESTIONÁRIO</h2>
+                <p class="text">A escola em que você está matriculado(a) será informada sobre a possível ocorrência do <i>bullying</i> e lhe prestará o apoio necessário. Não se preocupe, as informações fornecidas são de forma anônima e não serão usadas para identificá-lo.</p>
+                <a href="#"> <!-- "RESPONDER AGORA" OU COLOCAR UMA SETA PARA BAIXO? --> </a>
+                <form> <!-- TALVEZ SEJA INTERESSANTE QUE ESSA PARTE ESTEJA OCULTA ATÉ QUE O USUÁRIO CLIQUE-->
+                    <!--Perguntas pessoais-->
+                   <div class="perguntas-pessoais">
+                        <label>Qual a sua escola?</label>
+                        <select>
+                            <option value="A">Escola A</option>
+                            <option value="B">Escola B</option>
+                            <option value="C">Escola C</option>
+                        </select>
+                        <label for="age">Idade: </label>
+                        <input type="number" min="10" max="30" id="age">
+                        <label for="gender">Você se identifica com qual gênero? </label>
+                        <select name="gender" id="gender">
+                            <option value="feminino">Feminino</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                        <label>Outro: Qual? </label>
+                        <input>
+                        <label for="ethnicity">Voce se identifica com qual cor ou raça/etnia? </label>
+                        <select name="ethnicity" id="ethnicity">
+                            <option value="amarela">Amarela</option>
+                            <option value="branca">Branca</option>
+                            <option value="indigena">Indígena</option>
+                            <option value="parda">Parda</option>
+                            <option value="preta">Preta</option>
+                        </select>
+                        <label>Você está a quantos anos estudando nesta escola?</label>
+                        <select>
+                            <option value="1">1 ano</option>
+                            <option value="2">2 anos</option>
+                            <option value="3">3 anos</option>
+                            <option value=">4">4 anos ou mais</option>
+                        </select>
+                        <label>Você estudou até então predominantemente em:</label>
+                        <select>
+                            <option value="publica">Escola pública</option>
+                            <option value="particular-bolsa">Escola particular com bolsa</option>
+                            <option value="particular">Escola particular sem bolsa</option>
+                        </select>
+                   </div>
+                    <!--Perguntas sobre bullying-->
+                    <div class="perguntas-bullying">
+                        <p>Sobre sua experiência com situações de <i>bullying</i> na sua escola:</p>
+                        <input type="radio" name="bullying" value="presenciei" id="seen">
+                        <label for="seen">Já presenciei <i>bullying</i></label>
+                        <input type="radio" name="bullying" value="sofri" id="bullied">
+                        <label for="seen">Já sofri <i>bullying</i></label>
+                        <input type="radio" name="bullying" value="pratiquei" id="bullies">
+                        <label for="seen">Já pratiquei <i>bullying</i></label>
+                        <p>Qual a frequência que essas situações ocorrem(ocorreram)?</p>
+                        <input type="radio" name="frequency" value="nunca" id="never">
+                        <label for="never">Nunca</label>
+                        <input type="radio" name="frequency" value="raramente" id="rarely">
+                        <label for="rarely">Raramente</label>
+                        <input type="radio" name="frequency" value="Às Vezes" id="occasionally">
+                        <label for="occasionally">Às Vezes</label>
+                        <input type="radio" name="frequency" value="frequentemente" id="frequently">
+                        <label for="frequently">Frequentemente</label>
+                        <input type="radio" name="frequency" value="sempre" id="always">
+                        <label for="always">Sempre</label>
+
+                        <p>Que tipo de <i>bullying</i> você presenciou / sofreu / praticou na escola? (múltipla escolha)</p>
+                        <input type="checkbox" name="type" value="verbal" id="verbal">
+                        <label for="verbal">Verbal (insultos, xingamentos, apelidos depreciativos)</label>
+                        <input type="checkbox" name="type" value="físico" id="physical">
+                        <label for="physical">Físico (ameaças, chutes, socos)</label>
+                        <input type="checkbox" name="type" value="moral" id="moral">
+                        <label for="moral">Moral (inventar rumores, mentiras, boatos)</label>
+                        <input type="checkbox" name="type" value="material" id="material">
+                        <label for="">Material (mexer com pertences, subtrair coisas)</label>
+                        <input type="checkbox" name="type" valeu="social" id="social">
+                        <label for="social">Social (isolar, excluir, ignorar)</label>
+                        <input type="checkbox" name="type" value="psicológico" id="psychological">
+                        <label for="psychological">Psicológico (chantagens, manipulação, perseguição)</label>
+                        <input type="checkbox" name="type" value="Cyberbullying" id="cyberbullying">
+                        <label for="cyberbullying">Cyberbullying (ocorrido através de meios eletrônicos)</label>
+                        <input type="checkbox" name="type" value="homofóbico/transfóbico" id="blank">
+                        <label for="blank">Homofóbico/transfóbico (bullying por questões de sexualidade)</label>
+                        
+                        <p>Assinale com que frequência as situações abaixo ocorreram com você na escola:</p>
+
+                        <p>Onde essas situações ocorriam quando você:</p>
+
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+
+            </section>
+            <section class="help-form" id="help">
+                <h2>Precisa de Ajuda?</h2>
+                <p>Preencha as informações abaixo, que serão enviadas a um responsável da escola.</p>
+                <form>
+                    <label>Qual a sua escola?</label>
+                    <select>
+                        <option value="A">Escola A</option>
+                        <option value="B">Escola B</option>
+                        <option value="C">Escola C</option>
+                    </select>
+                    <label>Você presenciou ou sofreu <i>bullying</i>? </label>
+                    <select>
+                        <option value="presenciou">Presenciei</option>
+                        <option value="sofreu">Sofri</option>
+                    </select>
+                    <label for="name">Nome: </label>
+                    <input type="text" id="name" placeholder="João">
+                    <label for="lastname">Sobrenome: </label>
+                    <input type="text" id="lastname" placeholder="Silva">
+                    <label>Faça um pequeno relato do ocorrido:</label>
+                    <textarea name="case-description" id="case-description" rows="5"></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+
+            </section>
+
+        </main>
+
+        <aside>
+            <h1>Últimas notícias</h1>
+            <a href="https://brasilescola.uol.com.br/sociologia/bullying.htm" target="_blank">
+                <article class="article-card">
+                    <img class="card-img" src="./images/img-1.webp" alt="Adolescente sentado no chão (com a cabeça baixa) e três adolescentes em pé apontando o dedo para ele">
+                    <p>Bullying: o que é?</p>
+                </article>
+            </a>
+            <a href="https://maestrovirtuale.com/os-8-tipos-de-bullying-escolar-e-suas-caracteristicas/" target="_blank">
+                <article class="article-card">
+                    <!-- <figure class="card-img"> -->
+                        <img class="card-img" src="./images/img-2.png" alt="Estudante com os braços cruzados, segurando um material escolar, e cinco adolescentes atrás apontando o dedo para ela.">
+                    <!-- </figure> -->
+                    
+                    <p>Os 8 tipos de bullying escolar e suas características</p>
+                </article>
+            </a>
+            <a href="https://wakke.co/prevenir-o-bullying-na-escola/" target="_blank">
+                <article class="article-card">
+                    <img class="card-img" src="./images/img-3.png" alt="Desenho de uma pessoa sentada, com a mão no rosto e dedos apontados para ela.">                  
+                    <p>Saiba como identificar e prevenir o bullying na escola</p>
+                </article>
+            </a>
+            <a href="https://blog.elevaplataforma.com.br/bullying-na-escola/" target="_blank">
+                <article class="article-card">
+                    <img class="card-img" src="./images/img-4.jpg" alt="Criança triste, olhando para baixo, com os braços cruzados e duas crianças atrás apontando o dedo para ela.">
+                    <p>7 ações práticas para reduzir o bullying na escola</p>
+                </article>
+            </a>
+            <a href="https://minhasatividades.com/10-atividades-sobre-bullying/" target="_blank">
+                <article class="article-card">
+                    <img class="card-img" src="./images/img-5.png" alt="Imagem com o texto 10 atividades sobre bullying">
+                    <p>10 atividades sobre bullying</p>
+                </article>
+            </a>
+        </aside>
+    </div>    
+    <footer class="main-footer">
+        <h3>Desenvolvedores</h3>
+        <section class="dadosAutores">
+            <div class="dev-card">
+                <img class="dev1" src="./images/profile-img/imagem-felipe.jpg" alt= "Imagem do Desenvolvedor1" width="100">
+                <p>Felipe Brackmann Di Napoli</p>
+                <p>Desenvolvedor Fullstack Júnior</p>
+                <a href=""><img src="./images/icons/linkedin-icon2.png" width="30" class="logo-linkedin"></a>
+                <a href="https://github.com/felipe-napoli"><img src="./images/icons/github-icon.png" width="30" class="logo-github"></a>
+            </div>
+            
+            <div class="dev-card">
+                <img class="dev2" src="./images/profile-img/imagem-marcia.jpg" alt= "Imagem do Desenvolvedor2" width="100">
+                <p>Márcia Borges Henrique</p>
+                <p>Desenvolvedor Fullstack Júnior</p>
+                <a href="https://www.linkedin.com/in/marcia-borges-henrique/"><img src="./images/icons/linkedin-icon2.png" width="30" class="logo-linkedin"></a>
+                <a href="https://github.com/Marcia-Borges-Henrique"><img src="./images/icons/github-icon.png" width="30" class="logo-github"></a>
+            </div>
+            
+            <div class="dev-card">
+                <img class="dev3" src="./images/profile-img/imagem-mayara.jpg" alt= "Imagem do Desenvolvedor3" width="100">
+                <p>Mayara Delagnelo Medeiros</p>
+                <p>Desenvolvedor Fullstack Júnior</p>
+                <a href="https://www.linkedin.com/in/mayara-medeiros-687909200/"><img src="./images/icons/linkedin-icon2.png" width="30" class="logo-linkedin"></a>
+                <a href="https://github.com/MayaraDM"><img src="./images/icons/github-icon.png" width="30" class="logo-github"></a>
+            </div>
+            
+            <div class="dev-card">
+                <img class="dev4" src="./images/profile-img/imagem-victor.jpg" alt= "Imagem do Desenvolvedor4" width="100">
+                <p>Victor Gabriel Russo Galvão</p>
+                <p>Desenvolvedor Fullstack Júnior</p>
+                <a href="https://www.linkedin.com/in/russovictor/"><img src="./images/icons/linkedin-icon2.png" width="30" class="logo-linkedin"></a>
+                <a href="https://github.com/victorusso"><img src="./images/icons/github-icon.png" width="30" class="logo-github"></a>
+            </div>            
+        </section>
+    </footer>
+</body>
+</html>
