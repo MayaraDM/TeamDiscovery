@@ -18,10 +18,6 @@ a {
     text-decoration: none;
 }
 
-li {
-    list-style: none;
-}
-
 /* Header */
 header {
     background-color: #064273;
@@ -53,6 +49,7 @@ nav a {
     color: white;
 }
 nav li{
+    list-style: none;
     padding: 10px;
 }
 nav li:hover{
@@ -69,13 +66,8 @@ nav li:hover{
     justify-content: space-around;
     margin: 1rem;
 }
-/*.general-container {
-    display: flex;
-    justify-content: flex-start;
-    margin: 10px;
-} */
 
-main {
+.main-container {
     width: 75%;
     margin: 1rem;
 
@@ -115,6 +107,49 @@ aside h1{
     text-align: center;
 }
 
+/* Main - Saiba mais */
+.saiba-mais {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 15px;
+}
+
+.info:nth-child(odd) {
+    flex-direction: row-reverse;
+} 
+.saiba-mais h1 {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    letter-spacing: 1.5px;
+}
+
+.saiba-mais img {
+    width: 300px;
+    border-radius: 15%;
+    margin: 10px;
+}
+
+.info-contents {
+    width: 60%;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 0px;
+}
+.info-img {
+    width: 40%;
+    text-align: center;
+}
+#info-2 {
+    justify-content: flex-end;
+    
+}
 /* Footer */
 footer {
     text-align: center;
@@ -161,4 +196,10 @@ footer p {
     background-color: white;
     border-radius: 20%;
 }
-/* media */
+/* media  - ARRUMAR!*/
+ @media only screen and (max-width: 800px) {
+    .info {
+        flex-direction: column;
+       justify-content: center;
+    }
+} 
