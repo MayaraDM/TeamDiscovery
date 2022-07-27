@@ -128,4 +128,24 @@ footer {
     border-radius: 5px;
 }
 
+h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+footer p {
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+.dev1, .dev2, .dev3, .dev4, .dev5{
+    border-radius: 30%;
+}
+
+.dadosAutores{
+    display: flex;
+    flex-direction: column;
+}
+
 /* media */

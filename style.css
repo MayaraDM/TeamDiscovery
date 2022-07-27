@@ -31,10 +31,7 @@ header {
     justify-content: flex-start;
     padding: 10px;
 }
-/*#img-logo {
-    border: 1px solid;
-    border-radius: 50px;
-} */
+
 #img-logo img {
     overflow: hidden;
     border-radius: 500%;
@@ -61,29 +58,6 @@ nav li:hover{
     transition-duration: 0.2s; 
 }
 
-<<<<<<< HEAD
-.general-container {
-    display: flex;
-    justify-content: flex-start;
-    margin: 10px;
-}
-
-main {
-    width: 80%;
-
-}
-
-aside {
-    width: 20%;
-}
-
-.article-card {
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 5px 5px 10px 0px;
-    margin-top: 10px;
-}
-=======
 /* Principal - Main e Aside */
 
 .principal { 
@@ -112,7 +86,7 @@ aside {
 }
 
 .articles_picture img{
-    width: 400px;
+    width: 200px;
 }
 
 .article_title{
@@ -120,7 +94,6 @@ aside {
 }
 
 /* Footer */
->>>>>>> 93f9a7364e0874b2cab889967c36eb9f90598c82
 footer {
     background-color: #064273;
     color:white; 
