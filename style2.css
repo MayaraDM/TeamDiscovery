@@ -141,11 +141,10 @@ input {
     line-height: 25px;
     background-color: rgb(224, 224, 224);
 }
-form p{
+form p, h4, h3{
     background-color: #76b6c4;
     padding: 14px;
     font-weight: bold;
-    border-radius: 5px;
 }
 
 label{
