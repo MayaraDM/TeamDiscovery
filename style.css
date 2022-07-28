@@ -229,10 +229,27 @@ aside h1{
 }
 
 .info-contents {
+    margin: 20px;
     padding: 25px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 5px 5px 10px 0px;
+}
+
+.info-contents h2{
+    text-align: center;
+    color:#064273;
+    border-bottom: #064273 solid 1px;
+    margin: 20px;
+    text-transform: uppercase;
+}
+
+.info-contents p, ul{
+    padding: 5px;
+    list-style-type:circle;
+    line-height: 25px;
+    text-align: justify;
+    margin: 10px;
 }
 .info-img {
     text-align: center;
